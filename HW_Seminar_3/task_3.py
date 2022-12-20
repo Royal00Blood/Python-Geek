@@ -7,3 +7,10 @@
 # Пример:
 #
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+my_list = [float(el) for el in input().split()]
+def task_solve(list_in):
+    for i in range(len(list_in)):
+        list_in[i] = list_in[i] % 1
+    return max(list_in)-min(list_in)
+print(my_list, '=> ', task_solve(my_list))

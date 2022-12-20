@@ -5,3 +5,15 @@
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
+
+number = int(input('Введите число: '))
+print(number, '->', bin(number))
+
+# вариант 2
+b = ''
+
+while number > 0:
+    b = str(number % 2) + b
+    n = number // 2
+
+print(b)
