@@ -36,3 +36,8 @@ def solve_task(el):
         list_print(list_sol)
 solve_task(k)
 print(list_out)
+my_file = open("BabyFile.txt", "w+")
+for i in list_out:
+    my_file.write(i)
+    my_file.write('  ')
+my_file.close()
